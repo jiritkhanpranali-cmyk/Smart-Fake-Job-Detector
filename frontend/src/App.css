@@ -1,0 +1,296 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0b1220, #2c0333);
+  color: white;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-box h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #00c6ff;
+}
+
+.brand-box p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* NAV LINKS */
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 15px;
+  transition: 0.3s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  color: #00c6ff;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid #00c6ff;
+  color: #00c6ff;
+}
+
+/* ================= HERO ================= */
+.hero {
+  text-align: center;
+  padding: 90px 20px 40px;
+}
+
+.hero-text {
+  max-width: 760px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  margin-top: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(90deg,#00c6ff,#0072ff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= GRID SYSTEM ================= */
+.grid {
+  display: grid;
+  gap: 22px;
+  padding: 30px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* ================= DASHBOARD LAYOUT ================= */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 30px 40px;
+}
+
+.ai-risk-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 0 40px 30px;
+}
+
+/* ================= BASE CARD ================= */
+.card,
+.home-card,
+.dashboard-card,
+.admin-card {
+  background: rgba(255,255,255,0.07);
+  padding: 22px;
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  transition: 0.3s;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.card:hover,
+.home-card:hover,
+.dashboard-card:hover,
+.admin-card:hover {
+  transform: translateY(-5px);
+}
+
+/* card sizes */
+.dashboard-card {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-card {
+  min-height: 200px;
+}
+
+/* ================= TITLES ================= */
+.card h2,
+.home-card h2,
+.dashboard-card h2,
+.admin-card h2 {
+  margin-top: 0;
+  color: #00c6ff;
+}
+
+/* ================= HEADINGS ================= */
+.card h1,
+.dashboard-card h1,
+.admin-card h1 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+/* ================= TEXTAREA ================= */
+textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.9);
+  color: #000;
+  min-height: 180px;
+}
+
+/* ================= INPUT ================= */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+/* ================= AI OUTPUT ================= */
+pre {
+  background: rgba(0,0,0,0.25);
+  padding: 15px;
+  border-radius: 12px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* ================= COLORS ================= */
+.green { color: #22c55e; }
+.red { color: #ef4444; }
+.yellow { color: #facc15; }
+
+/* ================= AUTH ================= */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.auth-card {
+  width: 380px;
+  text-align: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.75;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .dashboard-grid,
+  .ai-risk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+/* ================= ADMIN GRID FIX ================= */
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px 30px;
+}
+
+@media (max-width: 1100px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================= CHART TEXT FIX ================= */
+.recharts-text,
+.recharts-cartesian-axis-tick-value {
+  fill: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+/* ================= HERO TITLE WITH ICON FIX ================= */
+
+.hero-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* 📊 ICON FIX (THIS SOLVES YOUR ISSUE) */
+.hero-title .icon {
+  font-size: 44px;
+  color: #00c6ff;
+  display: inline-block;
+  filter: drop-shadow(0 0 10px rgba(0,198,255,0.8));
+  animation: floatIcon 2s infinite ease-in-out;
+}
+
+/* gradient text ONLY */
+.hero-gradient {
+  background: linear-gradient(90deg,#00c6ff,#0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ICON ANIMATION */
+@keyframes floatIcon {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
