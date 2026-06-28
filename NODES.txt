@@ -1,0 +1,110 @@
+Smart Fake Internship and Job Alert Detector
+Execution Flow
+
+
+START
+
+ |
+
+ |
+
+User Opens Application
+
+ |
+
+ |
+
+Streamlit Interface Loads
+
+ |
+
+ |
+
+User Enters Job / Internship Details
+
+(Company Name, Description, Salary, Requirements)
+
+ |
+
+ |
+
+Input Data Sent For Processing
+
+ |
+
+ |
+
+Text Preprocessing Module
+
+ |
+
+ |
+
+Cleaning Text Data
+
+(Tokenization, Removing Noise, Formatting)
+
+ |
+
+ |
+
+NLP Feature Extraction
+
+ |
+
+ |
+
+Machine Learning Model Receives Features
+
+ |
+
+ |
+
+AI Classification Process
+
+ |
+
+ |
+
+Risk Analysis
+
+ |
+
+ +-----------------------------+
+
+ |                             |
+
+ v                             v
+
+Genuine Job                 Fake Job
+
+ |                             |
+
+Safe To Apply             Avoid / Warning
+
+
+ |
+
+ |
+
+Suspicious Category
+
+ |
+
+ |
+
+Verification Recommendation
+
+ |
+
+ |
+
+Display Final Result
+
+(Category + Explanation + Safety Advice)
+
+ |
+
+ |
+
+END
