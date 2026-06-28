@@ -1,0 +1,86 @@
+Smart-Fake-Internship-Job-Detector
+
+│
+│
+├── app.py
+│
+│
+├── model/
+│   │
+│   ├── trained_model.pkl
+│   ├── vectorizer.pkl
+│
+│
+├── dataset/
+│   │
+│   └── job_dataset.csv
+│
+│
+├── preprocessing/
+│   │
+│   └── text_cleaning.py
+│
+│
+├── prediction/
+│   │
+│   └── classifier.py
+│
+│
+├── utils/
+│   │
+│   └── helper_functions.py
+│
+│
+├── requirements.txt
+│
+│
+├── README.md
+│
+│
+├── Nodes.txt
+│
+│
+└── Structure.txt
+
+
+
+Project Modules:
+
+
+1. Frontend Layer
+
+Technology:
+Streamlit
+
+Purpose:
+Provides user interface for entering job information.
+
+
+2. Processing Layer
+
+Technology:
+Python + NLP
+
+Purpose:
+Cleans and prepares text data.
+
+
+3. AI Model Layer
+
+Technology:
+Machine Learning
+
+Purpose:
+Classifies job opportunities.
+
+
+4. Output Layer
+
+Purpose:
+
+Shows:
+
+- Risk Level
+- Prediction
+- Explanation
+- Recommendation
